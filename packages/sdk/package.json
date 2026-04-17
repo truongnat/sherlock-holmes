@@ -1,0 +1,13 @@
+{
+  "name": "@holmes/sdk",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": "./src/types.ts",
+    "./provider": "./src/provider-base.ts",
+    "./scoring": "./src/scoring.ts"
+  },
+  "scripts": {
+    "test": "bun test"
+  }
+}

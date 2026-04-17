@@ -1,0 +1,13 @@
+{
+  "name": "@holmes/server",
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "@elysiajs/cors": "latest",
+    "@elysiajs/stream": "^1.1.0",
+    "@holmes/core": "workspace:*",
+    "@holmes/providers": "workspace:*",
+    "@holmes/sdk": "workspace:*",
+    "elysia": "latest"
+  }
+}

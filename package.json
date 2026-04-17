@@ -1,0 +1,29 @@
+{
+  "name": "holmes-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "bun run --filter '*' build",
+    "test": "bun test",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "cli": "bun run packages/cli/src/index.ts",
+    "server": "bun run packages/server/src/index.ts",
+    "web": "bun run --cwd packages/web dev",
+    "dev": "bun x concurrently \"bun server\" \"bun web\""
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.0",
+    "@types/bun": "latest",
+    "typescript": "^5.6.0",
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}

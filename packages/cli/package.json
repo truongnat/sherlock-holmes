@@ -1,0 +1,13 @@
+{
+  "name": "@holmes/cli",
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "@holmes/core": "workspace:*",
+    "@holmes/providers": "workspace:*",
+    "@holmes/sdk": "workspace:*",
+    "cac": "^6.7.14",
+    "csv-stringify": "^6.7.0",
+    "picocolors": "^1.1.0"
+  }
+}
